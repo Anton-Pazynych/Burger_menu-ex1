@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<div class="burger-btn">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<nav class="burger-menu">
+  <ul class="burger-list">
+    <li class="burger-item"><a href="#">Home</a></li>
+    <li class="burger-item"><a href="#">About us</a></li>
+    <li class="burger-item"><a href="#">FAQ</a></li>
+  </ul>
+</nav>
+
+ <script >
+let menuBtn = document.querySelector('.burger-btn');
+let menuBody = document.querySelector('.burger-menu');
+
+menuBtn.addEventListener('click', function(){
+  menuBtn.classList.toggle('active');
+  menuBody.classList.toggle('active');
+})
+ </script>
+
+</body>
+</html>
